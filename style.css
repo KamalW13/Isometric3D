@@ -1,0 +1,93 @@
+body{
+	background-color: rgb(34, 38, 58);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.kotak{
+	border: 10px solid black;
+	width: 200px;
+	height: 450px;
+	position: relative;
+	transform: rotate(-70deg) skewY(45deg);
+
+	box-shadow: -10px 10px 0 gray;
+	border-radius: 10px;
+}
+
+.layar{
+	background-color: rgb(130, 130, 130);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;;
+	transition: .5s;
+	border-radius: 10px;
+}
+
+.layar.satu{
+	opacity: 1;
+}
+
+.layar.dua{
+	opacity: .8;
+	background-color: white;
+}
+
+.layar.tiga{
+	opacity: .4;
+	background-color: white
+}
+
+
+.kotak:hover .dua{
+	transform: translate(70px, -100px);	
+}
+
+.kotak:hover .tiga{
+	transform: translate(120px, -150px);	
+}	
+
+
+
+
+
+
+/*body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+div{
+	transform: translate(-50%, -50%);
+
+}
+
+*/
+/*
+.typing > *{
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 3s steps(40) infinite;
+
+}
+
+@keyframes typing{
+	0%{
+		width: 0%;
+	}
+	80%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}*/
